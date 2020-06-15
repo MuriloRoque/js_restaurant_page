@@ -1,15 +1,16 @@
 export const createTabs = () => {
   const CONTENT = document.getElementById('content');
   const DATA_TABS = document.createElement('ul');
+  const TEXT = ['home', 'contact', 'menu'];
   DATA_TABS.setAttribute('id', 'data-tabs');
   DATA_TABS.setAttribute('role', 'tablist');
   CONTENT.appendChild(DATA_TABS);
+  createList(DATA_TABS, TEXT);
+  createContents(CONTENT, TEXT);
 };
 
-export const createList = () => {
-  const DATA_TABS = document.getElementById('data-tabs');
-  let text = ['home', 'contact', 'menu'];
-  text.forEach((item) => {
+const createList = (DATA_TABS, TEXT) => {
+  TEXT.forEach((item) => {
     let element = document.createElement('li');
     let anchor = document.createElement('a');
     DATA_TABS.appendChild(element);
@@ -23,10 +24,8 @@ export const createList = () => {
   DATA_TABS.firstChild.setAttribute('aria-selected', 'true');
 };
 
-export const createContents = () => {
-  let text = ['home', 'contact', 'menu'];
-  const CONTENT = document.getElementById('content');
-  text.forEach((item) => {
+const createContents = (CONTENT, TEXT) => {
+  TEXT.forEach((item) => {
     let element = document.createElement('div');
     CONTENT.appendChild(element);
     element.setAttribute('id', item)
