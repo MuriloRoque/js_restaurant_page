@@ -1,4 +1,4 @@
-export const createContact = () => {
+const createContact = () => {
   const ELEMENT = document.getElementById('contact');
   const HEADING = document.createElement('h1');
   const INFO = document.createElement('ul');
@@ -15,3 +15,4 @@ export const createContact = () => {
   PHONE.textContent = 'Call the restaurant: +55 16 99356 2451';
   ADDRESS.textContent = 'Visit us: 7059 North Bayberry St. Corpus Christi, TX 78418';
 };
+export default createContact;
