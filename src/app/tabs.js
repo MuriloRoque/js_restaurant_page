@@ -1,6 +1,6 @@
-import { createHome } from "./pages/home";
-import { createContact } from "./pages/contact";
-import { createMenu } from "./pages/menu";
+import { createHome } from "./home";
+import { createContact } from "./contact";
+import { createMenu } from "./menu";
 
 export const createTabs = () => {
   const CONTENT = document.getElementById('content');
