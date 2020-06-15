@@ -1,24 +1,24 @@
 module.exports = {
   entry: {
-    main: "./src/index.js",
-    vendor: "./src/vendor.js"
+    main: './src/index.js',
+    vendor: './src/vendor.js',
   },
   module: {
     rules: [
       {
         test: /\.html$/,
-        use: ["html-loader"]
+        use: ['html-loader'],
       },
       {
         test: /\.(svg|png|jpg|gif)$/,
         use: {
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "imgs"
-          }
-        }
-      }
-    ]
-  }
+            name: '[name].[hash].[ext]',
+            outputPath: 'imgs',
+          },
+        },
+      },
+    ],
+  },
 };
