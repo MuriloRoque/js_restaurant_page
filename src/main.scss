@@ -1,1 +1,32 @@
-@import "~bootstrap/scss/bootstrap";
+body{
+  background-color: rgb(228, 225, 225);
+  h1{
+    font-size: 25px;
+  }
+  img{
+    width: 500px;
+    border: 1px solid #000;
+  }
+  #data-tabs{
+    display: flex;
+    padding: 5px;
+    li{
+      margin: 15px;
+      list-style-type: none;
+      text-transform: capitalize;
+      font-size: 20px;
+      a{
+        color: #3b3535;
+      }
+    }
+  }
+  #contact{
+    ul{
+      padding: 0;
+      li{
+        list-style-type: none;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
