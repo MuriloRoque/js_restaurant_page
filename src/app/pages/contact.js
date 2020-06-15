@@ -13,5 +13,5 @@ export const createContact = () => {
   HEADING.textContent = 'Contact us:';
   EMAIL.textContent = 'Send the restaurant an e-mail: muriloengqui@gmail.com';
   PHONE.textContent = 'Call the restaurant: +55 16 99356 2451';
-  ADDRESS.textContent = 'Visit us: 7059 North Bayberry St. Corpus Christi, TX 78418'
+  ADDRESS.textContent = 'Visit us: 7059 North Bayberry St. Corpus Christi, TX 78418';
 };
