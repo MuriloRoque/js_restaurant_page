@@ -1,3 +1,7 @@
+import { createHome } from "./pages/home";
+import { createContact } from "./pages/contact";
+import { createMenu } from "./pages/menu";
+
 export const createTabs = () => {
   const CONTENT = document.getElementById('content');
   const DATA_TABS = document.createElement('ul');
@@ -30,4 +34,7 @@ const createContents = (CONTENT, TEXT) => {
     CONTENT.appendChild(element);
     element.setAttribute('id', item)
   });
+  createHome();
+  createContact();
+  createMenu();
 };
